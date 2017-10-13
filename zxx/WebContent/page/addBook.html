@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>add book</title>
+  		<style type="text/css">
+			*{
+				margin: 3px;
+			}
+			
+			#top{
+
+				width: 100%;
+				height: 60px;
+				text-align:center;	
+				background-repeat: no-repeat;
+				background-color: darkseagreen;
+				/*background-image: url(img/002.jpg);*/
+				/*background-repeat: no-repeat;/*背景图片的平铺方式*/
+				/*background-size: 100%;*/
+				
+				/*border:1px solid red;*/
+				/*background-color:black*/
+			}
+			#welcome{
+				font-size: 40px;
+				color: #FFFFFF;
+				font-family: "微软雅黑";
+			}
+			#middle{
+				vertical-align: middle;
+				text-align: center;
+				width: 100%;
+				height: 460px;
+				/*border:1px solid red;*/
+				background: url(../img/01.jpg);
+				background-repeat: no-repeat;/*背景图片的平铺方式*/
+				/*background-position: center;*/
+				background-size: 100%;
+			}
+			#bottom{
+				width: 100%;
+				height: 30px;
+				text-align: center;
+				background-repeat: no-repeat;
+				background-color: darkseagreen;
+				/*background-image: url(img/10.jpg);*、
+				、*background-repeat: no-repeat;/*背景图片的平铺方式*/
+				/*background-size: 100%;*/
+				/*border:1px solid red;*/
+			}
+			#topImg{
+				width: 30px;
+			}
+			#tabl{
+					text-align: center;
+					width: 100%;
+				   height: 100px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div id="top"  >
+			<font id="welcome" >增加图书</font>
+			
+		</div>
+		<div id="middle" align="center">
+			<form method="post" name="frmRegist" action="AddBookServlet">
+		<br><br>
+		<h1 align="center">增加图书</h1>
+		
+		<table  style="margin: auto;">
+			<tr>
+				<td >书名：</td>
+				<td ><input type="text" id="txtbookn" name="txtbookn" size="30"
+					maxlength="20"></td>
+			</tr>
+						<tr>
+				<td >作者：</td>
+				<td ><input type="text" id="txtauthor" name="txtauthor" size="30"
+					maxlength="20"></td>
+			</tr>
+						<tr>
+				<td >出版社：</td>
+				<td ><input type="text" id="txtpub" name="txtpub" size="30"
+					maxlength="20"></td>
+			</tr>
+			<tr>
+				<td>分类：</td>
+				<td><input type="text" id="txtsort" name="txtsort" size="30"
+					maxlength="20"></td>
+			</tr>
+						<tr>
+				<td>简介：</td>
+				<td><input type="text" id="txtintr" name="txtintr" size="30"
+					maxlength="20"></td>
+			</tr>
+						<tr>
+				<td>价格：</td>
+				<td><input type="text" id="txtprice" name="txtprice" size="30"
+					maxlength="20"></td>
+			</tr>
+						<tr>
+				<td>库存：</td>
+				<td><input type="text" id="txtstock" name="txtstock" size="30"
+					maxlength="20"></td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center">				
+				<input type="submit" name="Submit" value="提交" onClick="return validateLogin();">
+					&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="reset" name="Reset" value="重置">
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="button" value="返回" onclick="window.history.go(-1);" >
+				</td>
+			</tr>
+
+		</table>
+	</form>
+		</div>
+		<div id="bottom">
+			&copy;版权所有：叶子网上书店
+		</div>
+	</body>
+</html>

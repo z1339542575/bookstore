@@ -1,0 +1,74 @@
+
+<html>
+
+ <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <title>青青草原书店</title>
+    <style type="text/css">
+        *{
+        	margin: 3px;
+         }
+         #header{
+                width:100%;
+                height:100px;
+                background-color:darkseagreen;
+                text-align:center;
+                line-height:100px;
+           }
+         #content{
+                width:100%;
+                height:650px;
+                background:lightgray;
+                text-align:center;
+                line-height:40px;
+                padding-top: 10%;
+          }
+         table{
+		 width:25%;
+	    	margin:0 auto;
+	 }
+    </style>
+</head>
+ <body style="margin:0px">
+     <div id="header" style="background-size:100% 100%;">
+          <h1 ><font color=black>欢迎来到青青草原书店</font></h1>
+     </div>
+      <div id="content">
+          <form action="RegistServlet" method="post">
+              <h1 align="center">用户注册</h1>
+              <table>
+                     <tr>
+                        <td>用户名:</td>
+                             <td><input type="text"  id="username" name="username"size="25" maxlength="20"></td>
+                        <td></td>
+                     </tr>
+                     <tr>
+			<td>密码:</td>
+                             <td><input type="password" id="userpwd" name="userpwd"size="25" maxlength="20"></td>
+			<td></td>
+                     </tr>
+                     <tr>
+                        <td>电话:</td>
+                             <td><input type="text"  id="phone" name="phone"size="25" maxlength="20"></td>
+                        <td></td>
+                     </tr>
+                     <tr>
+                        <td>地址:</td>
+                             <td><input type="text"  id="addr" name="addr"size="25" maxlength="20"></td>
+                        <td></td>
+                     </tr>
+                     <tr>
+			 <td colspan="2" align="center"><input type="submit" value="注册" id="denglu"/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			 <input type="reset" value="重置" id="cancel"/></td>
+                     </tr>
+                     <br>
+			<tr>
+                            <td colspan=2 align="center">已有账号？点击<a href="login.jsp">登陆</a>账号</td>
+			</tr>
+                     <br>
+              </table>
+          </form>
+      </div>
+ </body>
+</html>
